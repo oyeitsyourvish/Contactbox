@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand">iVishMusic</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="acontainer">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>GET IN TOUCH WITH US</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="number" id="phone" placeholder="Phone No." required>
+            <textarea id="messege" rows="4" placeholder="Add your query here."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="contactus.js"> </script>
+</body>
+</html>
